@@ -1,0 +1,393 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Auth/GetToken",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/Auth/GetToken",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/testWithAuth",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/auth/testWithAuth",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+      //for this API only, token Validation done in respective micro service
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/testWithoutAuth",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/auth/testWithoutAuth",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/airline/GetAvailableLocations",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/airline/GetAvailableLocations",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/airline/GetAirlines",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/airline/GetAirlines",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "GetAirlines",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/airline/AddAirline",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/airline/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/airline/BlockUnblockAirline",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/airline/BlockUnblockAirline",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/booking",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/bookings",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/airline/AddFlightInventory",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/airline/inventory/add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/airline/GetFlightInventory",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/airline/GetFlightInventory",
+      "UpstreamHttpMethod": [ "Get" ],
+      "key": "GetFlightInventory",
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/airline/SearchFlights",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/search",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/airline/GetFilteredFlightInventory",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9006,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/GetFilteredFlightInventory",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/BookFlights/{flightsIDs}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/booking/{flightsIDs}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/BookTicketsAsPerJourney/{flightsIDs}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/BookTicketsAsPerJourney/{flightsIDs}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/GetBookedTicketsAsPerJourney/{PNR}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/GetBookedTicketsAsPerJourney/{PNR}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/GetAllBookedTickets",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/GetAllBookedTickets",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/GetBookedFlightsHistory/{emailId}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/booking/history/{emailId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/CancelTicket/{PNR}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/booking/cancel/{PNR}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/TicketStatus/{PNR}",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/ticket/{PNR}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/GetDiscounts",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/GetDiscounts",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Booking/AddDiscounts",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9008,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/AddDiscount",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    }
+
+
+
+    ,
+    {
+      "DownstreamPathTemplate": "/api/Aggregator/get-aggregated-Flight-details",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9002,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/v1.0/flight/aggregated-Flight-details",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KeyNameAuthTokenValidate",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  //"Aggregates": [
+  //  {
+  //    "RouteKeys": [
+  //      "GetFlightInventory",
+  //      "GetAirlines"
+  //    ],
+  //    "UpstreamPathTemplate": "/api/v1.0/flight/aggregated-Flight-details",
+  //    "UpstreamHttpMethod": [ "Get" ]
+  //    //"RouteKeys": [
+  //    //  "GetFlightInventory",
+  //    //  "GetAirlines"
+  //    //],
+  //    //"Aggregator": "FlightInventoryDetailsAggregator"
+  //  }
+  //],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}

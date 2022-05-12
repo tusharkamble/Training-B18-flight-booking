@@ -1,0 +1,13 @@
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\appsettings.Development.json
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\appsettings.json
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\AuthServices.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\AuthServices.runtimeconfig.json
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\AuthServices.pdb
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\Remotion.Linq.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\System.Diagnostics.DiagnosticSource.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\System.Interactive.Async.dll
+D:\TrainingWorkspace\SessionPractice\APIGateway\AuthServices\obj\Release\netcoreapp2.1\PubTmp\Out\AuthServices.deps.json

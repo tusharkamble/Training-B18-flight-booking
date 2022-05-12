@@ -1,0 +1,13 @@
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\bin\Debug\netcoreapp2.1\RabbitMQProducer.deps.json
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\bin\Debug\netcoreapp2.1\RabbitMQProducer.runtimeconfig.json
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\bin\Debug\netcoreapp2.1\RabbitMQProducer.runtimeconfig.dev.json
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\bin\Debug\netcoreapp2.1\RabbitMQProducer.dll
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\bin\Debug\netcoreapp2.1\RabbitMQProducer.pdb
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.csproj.AssemblyReference.cache
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.GeneratedMSBuildEditorConfig.editorconfig
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.AssemblyInfoInputs.cache
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.AssemblyInfo.cs
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.csproj.CoreCompileInputs.cache
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.dll
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.pdb
+D:\TrainingWorkspace\SessionPractice\Kafka\RabbitMQProducer\RabbitMQProducer\obj\Debug\netcoreapp2.1\RabbitMQProducer.genruntimeconfig.cache
