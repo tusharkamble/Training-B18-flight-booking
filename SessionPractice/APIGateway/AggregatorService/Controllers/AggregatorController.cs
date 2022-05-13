@@ -28,8 +28,10 @@ namespace AggregatorService.Controllers
                 //Fetch the JSON string from URL.                        
                 List<FlightInventory> lstFlightInventory = new List<FlightInventory>();
                 List<Airline> lstAirlines = new List<Airline>();
-                string apiUrl1 = "http://localhost:9000/api/airline/GetAirlines";
-                string apiUrl2 = "http://localhost:9000/api/airline/GetFlightInventory";
+                //string apiUrl1 = "http://localhost:9000/api/airline/GetAirlines";
+                //string apiUrl2 = "http://localhost:9000/api/airline/GetFlightInventory";
+                string apiUrl1 = "http://localhost:9006/api/airline/GetAirlines";
+                string apiUrl2 = "http://localhost:9006/api/airline/GetFlightInventory";
 
                 HttpClient client = new HttpClient();
                 HttpResponseMessage response1 = client.GetAsync(apiUrl1).Result;
